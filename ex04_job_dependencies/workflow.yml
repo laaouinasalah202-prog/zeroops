@@ -1,0 +1,14 @@
+name: backend frontend 
+on: push
+
+jobs:
+  backend :
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Backend tests passing"
+  frontend :
+    runs-on: ubuntu-latest
+    needs: backend
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Building frontend after backend success"
