@@ -1,0 +1,9 @@
+name: env
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    env:
+      PROJECT_NAME: KEY_MAP
+    steps:
+      - uses: actions/checkout@v4
