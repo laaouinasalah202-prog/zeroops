@@ -1,0 +1,7 @@
+name : eng team
+on : 
+    push:
+      branches: ['main']
+    pull_request:
+
+jobs:
