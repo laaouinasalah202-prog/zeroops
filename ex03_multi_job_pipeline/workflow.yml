@@ -2,12 +2,12 @@ name: backend frontend
 on: push
 
 jobs:
-  job 1:
+  backend :
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - run: echo "Testing backend"
-  job 2:
+  frontend :
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
