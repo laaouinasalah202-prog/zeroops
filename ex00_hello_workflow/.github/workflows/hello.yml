@@ -5,4 +5,4 @@ jobs:
   hello:
     runs-on: ubuntu
     steps:
-      - run: echo "Welcome to ZerOps!"
+      - run: echo "Welcome to ZeroOps!"
