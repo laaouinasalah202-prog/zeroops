@@ -1,0 +1,11 @@
+name: check before commits
+on: push
+
+jobs:
+  tasks:
+    runs-on: ubuntu
+    steps:
+      - uses: actions/checkout@v4
+      - run: python --version
+      - run: pwd
+      - run: ls -la
