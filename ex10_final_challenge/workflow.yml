@@ -1,0 +1,19 @@
+name: env
+on: 
+  push: ['main']
+  pull_request:
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    env:
+      PROJECT_NAME: "ZeroOps Production"
+
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+    
+      - run: pip install -r requirements.txt 
+      - run: python -m pytest
+      - run: echo "you success to validate all the requirements"
