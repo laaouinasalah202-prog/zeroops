@@ -1,0 +1,11 @@
+name: context variables
+on: push
+
+jobs:
+  checker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: "Repository: ${{ github.repository }}"
+      - run: "Branch: ${{ github.ref_name }}"
+      - run: "Commit SHA: ${{ github.sha }}"
